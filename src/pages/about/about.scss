@@ -1,3 +1,28 @@
 page-about {
 
+    ion-card {
+        position: relative;
+        text-align: left;
+      }
+    
+    .card-title {
+        //position: absolute;        
+        font-size: 1.2em;
+        font-style: normal;
+        width: 100%;        
+        color: primary;
+    }
+      
+    .card-content {
+        font-size: 1.0em;       
+        width: 100%;        
+    } 
+
+    .list-header-md {
+        color: primary;
+        font-style: bold;
+    }
+
+    
+
 }

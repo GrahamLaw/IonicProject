@@ -15,7 +15,62 @@
 
 </ion-header>
 
-
 <ion-content padding>
+  <ion-card>    
+    <ion-card-content>
+      <ion-card-title color="primary">
+        Location Information
+      </ion-card-title>
+      <p>
+        121, Clear Water Bay Road
+      </p>
+      <p>
+        Clear Water Bay, Kowloon          
+      </p>
+      <p>
+        HONG KONG          
+      </p>      
+      <div>
+        <ion-icon name="call"></ion-icon>
+        : +852 1234 5678
+      </div>
+      <div>
+        <ion-icon name="print"></ion-icon>
+        : +852 8765 4321
+      </div>
+      <div>
+        <ion-icon name="mail"></ion-icon>
+        : confusion@food.net
+      </div>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="call"></ion-icon>
+          <div>CALL</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="mail"></ion-icon>
+          <div>EMAIL</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 
-</ion-content>
+
+  <ion-list *ngIf="dish">
+    <ion-list-header>
+      Comments
+    </ion-list-header>
+    <ion-item *ngFor="let comment of dish.comments" text-wrap>
+      <h4> {{comment.comment}} </h4>
+      <p> {{comment.rating}} Stars</p>
+      <p>
+        <span> -- {{comment.author}} {{comment.date | date }} </span>
+      </p>
+    </ion-item>
+  </ion-list>
+  
+  </ion-content>
