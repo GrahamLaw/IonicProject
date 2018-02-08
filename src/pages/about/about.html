@@ -31,24 +31,6 @@
     </ion-card-content>
   </ion-card>
 
-  
-  <div *ngIf="leaders">
-      <ion-card >
-         <ion-card-content>
-             <ion-list>
-                 <ion-item *ngFor="let leader of leaders">
-                   <ion-avatar item-start>
-                     <img src="{{BaseURL + leader.image}}">
-                   </ion-avatar>
-                   <h2> {{leader.name | uppercase}}</h2>
-                   <h3>{{leader.designation}}</h3>
-                   <p> {{leader.description}}</p>
-             </ion-item>
-         </ion-list>
-       </ion-card-content>
-       </ion-card>
-     </div>
-
   <ion-list *ngIf="leaders">
     <ion-list-header>
       Corporate Leadership
