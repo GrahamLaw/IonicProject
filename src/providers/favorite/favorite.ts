@@ -6,6 +6,7 @@ import { DishProvider } from '../dish/dish';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+
 /*
   Generated class for the FavoriteProvider provider.
 
